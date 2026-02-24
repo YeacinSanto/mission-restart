@@ -70,14 +70,17 @@ https://fakestoreapi.com/products/1
 > **⚠️ Warning:** Do not use any AI tools to answer these questions. You must write the answers in **Bangla**.
 
 #### 1) What is the difference between `null` and `undefined`?
+=> undefined means, I am trying to use a variable that naver defined and null means variable is defined but value is never set
 
 #### 2) What is the use of the `map()` function in JavaScript? How is it different from `forEach()`?
-
+=> map function is return a new array but forEach does return anything
 #### 3) What is the difference between `==` and `===`?
-
+=> both of these we use to compare. "==" only consider the value but "===" consider value+data type
 #### 4) What is the significance of `async`/`await` in fetching API data?
+=> when we fetch the data sometimes we can't get the data by calling api. At that time whole website is crushed and user get the bad experience here instead using normal fetch we can use async/await where we can use try/catch. 
 
 #### 5) Explain the concept of Scope in JavaScript (Global, Function, Block).
+=> In normal word, I match scope with area. How much area a variable can take is scope. Global scope means it can accessible from all over the page. Function scope, we can access this only within this function and block, we can access within that block.
 
 ## ⚡ Dynamic Features & Functionalities
 

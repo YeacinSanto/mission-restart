@@ -32,7 +32,7 @@ const displayTrending = (products)=>{
    
     const product = products.slice(0,3).forEach(pro=>{
         trendingProduct.innerHTML += `
-         <div class="card bg-base-100 w-96 shadow-sm">
+         <div class="card bg-base-100 shadow-sm">
                     <figure class="h-40 sm:h-60 md:h-64 overflow-hidden">
                         <img class="w-75% h-full object-cove" src="${pro.image}"
                             alt/>

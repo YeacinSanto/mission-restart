@@ -108,7 +108,7 @@ const showAllProducts = products =>{
         allProducts.innerHTML += `
          <div class="card bg-base-100 shadow-sm">
                     <figure class="h-40 sm:h-60 md:h-64 overflow-hidden">
-                        <img class="w-75% h-full object-cove" src="${pro.image}"
+                        <img class="w-2/4 h-full object-cove" src="${pro.image}"
                             alt/>
                     </figure>
                     <div class="card-body">
@@ -149,7 +149,7 @@ const showCategoriesProduct = products =>{
         allProducts.innerHTML += `
          <div class="card bg-base-100 shadow-sm">
                     <figure class="h-40 sm:h-60 md:h-64 overflow-hidden">
-                        <img class="w-75% h-full object-cove" src="${pro.image}"
+                        <img class="w-2/4 h-full object-cove" src="${pro.image}"
                             alt/>
                     </figure>
                     <div class="card-body">

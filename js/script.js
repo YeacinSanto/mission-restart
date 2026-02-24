@@ -2,15 +2,22 @@
 const homePage = document.getElementById("home-page")
 const productsPage = document.getElementById("products-page")
 
-document.getElementById("homeBTN").addEventListener("click",()=>{
-    homePage.style.display = "block";
-    productsPage.style.display = "none";
-})
-document.getElementById("productsBTN").addEventListener("click",()=>{
-    productsPage.style.display = "block";
-    homePage.style.display = "none";
-    
-})
+document.querySelectorAll(".productsBTN").forEach(btn => {
+    btn.addEventListener("click", () => {
+        productsPage.style.display = "block";
+        homePage.style.display = "none";
+    });
+});
+
+document.querySelectorAll(".homeBTN").forEach(btn => {
+    btn.addEventListener("click", () => {
+        homePage.style.display = "block";
+        productsPage.style.display = "none";
+    });
+});
+
+
+
 
 const trending = () =>{
     const url = "https://fakestoreapi.com/products"
@@ -39,6 +46,7 @@ const displayTrending = (products)=>{
                             ${pro.title.slice(0,24)}....
                             
                         </h2>
+                        <h4 class="font-bold">$ ${pro.price}</h4>
                         
                         <div class="card-actions flex justify-between mt-5">
                             <div class="badge badge-outline p-4">Details</div>
@@ -112,6 +120,7 @@ const showAllProducts = products =>{
                             ${pro.title.slice(0,24)}....
                             
                         </h2>
+                        <h4 class="font-bold">$ ${pro.price}</h4>
                         
                         <div class="card-actions flex justify-between mt-5">
                             <div class="badge badge-outline p-4">Details</div>
@@ -152,6 +161,7 @@ const showCategoriesProduct = products =>{
                             ${pro.title.slice(0,24)}....
                             
                         </h2>
+                        <h4 class="font-bold">$ ${pro.price}</h4>
                         
                         <div class="card-actions flex justify-between mt-5">
                             <div class="badge badge-outline p-4">Details</div>
